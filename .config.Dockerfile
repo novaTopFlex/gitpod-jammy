@@ -1,2 +1,3 @@
-FROM ubuntu/jammy
-RUN sudo apt install ubuntu-release-upgrader-core; do-release-upgrade
+FROM scratch
+ADD ubuntu-jammy-oci-amd64-root.tar.gz /
+CMD ["bash"]
